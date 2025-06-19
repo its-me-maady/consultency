@@ -9,17 +9,19 @@
 </head>
 <body class="bg-slate-50">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-lg z-50">
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-lg z-50" aria-label="Main Navigation">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">ConsultCo</div>
+                <div class="text-2xl font-bold text-blue-700 drop-shadow-sm" aria-label="ConsultCo Home">ConsultCo</div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="text-slate-600 hover:text-violet-600 transition-all hover:scale-105">Home</a>
                     <a href="#about" class="text-slate-600 hover:text-violet-600 transition-all hover:scale-105">About</a>
                     <a href="#services" class="text-slate-600 hover:text-violet-600 transition-all hover:scale-105">Services</a>
+                    <a href="#team" class="text-slate-600 hover:text-violet-600 transition-all hover:scale-105">Team</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-violet-600 transition-all hover:scale-105">Testimonials</a>
                     <a href="#contact" class="text-slate-600 hover:text-violet-600 transition-all hover:scale-105">Contact</a>
                 </div>
-                <button class="md:hidden" id="mobile-menu-button">
+                <button class="md:hidden" id="mobile-menu-button" aria-label="Open mobile menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -29,12 +31,14 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="hidden fixed w-full bg-white shadow-md z-40" id="mobile-menu">
+    <div class="hidden fixed w-full bg-white shadow-md z-40" id="mobile-menu" aria-label="Mobile Navigation">
         <div class="container mx-auto px-6 py-4">
             <div class="flex flex-col space-y-4">
                 <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
                 <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#team" class="text-gray-600 hover:text-blue-600 transition-colors">Team</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors">Testimonials</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
             </div>
         </div>
@@ -45,12 +49,18 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent mb-6">Transform Your Business With Expert Consulting</h1>
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-800 drop-shadow-sm mb-6">Transform Your Business With Expert Consulting</h1>
                     <p class="text-lg text-slate-600 mb-8">We help businesses navigate challenges, seize opportunities, and achieve sustainable growth through strategic consulting solutions.</p>
-                    <a href="#contact" class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300 inline-block shadow-lg hover:shadow-violet-500/25">Get Started</a>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300 inline-block shadow-lg hover:shadow-blue-500/25">Get Started</a>
+                    <div class="mt-8 flex flex-wrap gap-4 items-center" aria-label="Client Logos">
+                        <img src="https://picsum.photos/seed/client1/120/40" alt="Client 1 Logo" class="h-10 grayscale hover:grayscale-0 transition"/>
+                        <img src="https://picsum.photos/seed/client2/120/40" alt="Client 2 Logo" class="h-10 grayscale hover:grayscale-0 transition"/>
+                        <img src="https://picsum.photos/seed/client3/120/40" alt="Client 3 Logo" class="h-10 grayscale hover:grayscale-0 transition"/>
+                        <img src="https://picsum.photos/seed/client4/120/40" alt="Client 4 Logo" class="h-10 grayscale hover:grayscale-0 transition"/>
+                    </div>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="https://picsum.photos/800/600?random=1" alt="Business Consulting" class="rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 object-cover">
+                    <img src="https://picsum.photos/800/600?random=hero" alt="Professional business meeting" class="rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 object-cover"/>
                 </div>
             </div>
         </div>
@@ -61,8 +71,8 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent mb-6">About ConsultCo</h2>
-                    <p class="text-lg text-slate-600 mb-6">With over 15 years of experience in business consulting, we've helped hundreds of companies achieve their full potential. Our team of expert consultants brings diverse industry knowledge and innovative approaches to every project.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">About ConsultCo</h2>
+                    <p class="text-lg text-slate-700 mb-6">With over 15 years of experience in business consulting, we've helped hundreds of companies achieve their full potential. Our team of expert consultants brings diverse industry knowledge and innovative approaches to every project.</p>
                     <div class="grid grid-cols-2 gap-4 mb-6">
                         <div class="p-4 bg-white/50 backdrop-blur-sm rounded-lg border border-violet-100">
                             <h4 class="font-semibold text-violet-700 mb-2">500+</h4>
@@ -83,13 +93,12 @@
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="https://picsum.photos/600/800?random=11" alt="Our Team" class="rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 w-full object-cover">
+                    <img src="https://picsum.photos/600/800?random=about" alt="Our expert consulting team" class="rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 w-full object-cover"/>
                 </div>
             </div>
-
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105">
-                    <img src="https://picsum.photos/400/300?random=2" alt="Our Mission" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/400/300?random=mission" alt="Our Mission" class="w-full h-48 object-cover rounded-lg mb-6"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Our Mission</h3>
                     <p class="text-slate-600 mb-4">To empower businesses with innovative solutions and strategic guidance for sustainable growth and success.</p>
                     <ul class="text-slate-600 list-disc list-inside">
@@ -99,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105">
-                    <img src="https://picsum.photos/400/300?random=3" alt="Our Vision" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/400/300?random=vision" alt="Our Vision" class="w-full h-48 object-cover rounded-lg mb-6"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Our Vision</h3>
                     <p class="text-slate-600 mb-4">To be the trusted partner in business transformation, known for excellence and innovation in consulting.</p>
                     <ul class="text-slate-600 list-disc list-inside">
@@ -109,7 +118,7 @@
                     </ul>
                 </div>
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105">
-                    <img src="https://picsum.photos/400/300?random=4" alt="Our Values" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/400/300?random=values" alt="Our Values" class="w-full h-48 object-cover rounded-lg mb-6"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Our Values</h3>
                     <p class="text-slate-600 mb-4">Integrity, innovation, excellence, and commitment to delivering exceptional value to our clients.</p>
                     <ul class="text-slate-600 list-disc list-inside">
@@ -119,8 +128,26 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- Timeline -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-violet-700 mb-8 text-center">Our Journey</h3>
+                <ol class="relative border-l-4 border-violet-200 ml-4">
+                    <li class="mb-10 ml-6">
+                        <span class="absolute flex items-center justify-center w-8 h-8 bg-violet-100 rounded-full -left-4 ring-4 ring-white"><svg class="w-5 h-5 text-violet-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/></svg></span>
+                        <h4 class="font-semibold text-blue-700">2009</h4>
+                        <p class="text-slate-700">Founded with a vision to transform businesses.</p>
+                    </li>
+                    <li class="mb-10 ml-6">
+                        <span class="absolute flex items-center justify-center w-8 h-8 bg-violet-100 rounded-full -left-4 ring-4 ring-white"><svg class="w-5 h-5 text-violet-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/></svg></span>
+                        <h4 class="font-semibold text-blue-700">2015</h4>
+                        <p class="text-slate-700">Reached 100+ clients and expanded internationally.</p>
+                    </li>
+                    <li class="ml-6">
+                        <span class="absolute flex items-center justify-center w-8 h-8 bg-violet-100 rounded-full -left-4 ring-4 ring-white"><svg class="w-5 h-5 text-violet-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/></svg></span>
+                        <h4 class="font-semibold text-blue-700">2023</h4>
+                        <p class="text-slate-700">Awarded "Best Consulting Firm" and launched digital transformation services.</p>
+                    </li>
+                </ol>
             </div>
         </div>
     </section>
@@ -132,157 +159,137 @@
                 <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent mb-6">Our Comprehensive Services</h2>
                 <p class="text-lg text-slate-600">We offer end-to-end consulting solutions tailored to your business needs. Our expert team combines industry knowledge with innovative approaches to deliver exceptional results.</p>
             </div>
-
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card Example -->
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 border border-violet-100">
-                    <img src="https://picsum.photos/400/300?random=5" alt="Strategy Consulting" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/seed/strategy/64/64" alt="Strategy Consulting Icon" class="w-12 h-12 mb-4"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Strategy Consulting</h3>
                     <p class="text-slate-600 mb-4">Develop winning strategies to achieve your business objectives and stay ahead of competition.</p>
                     <ul class="text-slate-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Market Analysis
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Competitive Positioning
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Growth Planning
-                        </li>
+                        <li class="flex items-center">Market Analysis</li>
+                        <li class="flex items-center">Competitive Positioning</li>
+                        <li class="flex items-center">Growth Planning</li>
                     </ul>
                 </div>
+                <!-- Repeat for other services, using relevant icons/images -->
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 border border-violet-100">
-                    <img src="https://picsum.photos/400/300?random=6" alt="Digital Transformation" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/seed/digital/64/64" alt="Digital Transformation Icon" class="w-12 h-12 mb-4"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Digital Transformation</h3>
                     <p class="text-slate-600 mb-4">Navigate the digital landscape and transform your business for the modern age.</p>
                     <ul class="text-slate-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Cloud Migration
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Process Automation
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Digital Strategy
-                        </li>
+                        <li class="flex items-center">Cloud Migration</li>
+                        <li class="flex items-center">Process Automation</li>
+                        <li class="flex items-center">Digital Strategy</li>
                     </ul>
                 </div>
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 border border-violet-100">
-                    <img src="https://picsum.photos/400/300?random=7" alt="Operations Excellence" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/seed/operations/64/64" alt="Operations Excellence Icon" class="w-12 h-12 mb-4"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Operations Excellence</h3>
                     <p class="text-slate-600 mb-4">Optimize your operations for efficiency, productivity, and sustainable growth.</p>
                     <ul class="text-slate-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Process Optimization
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Supply Chain Management
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Quality Management
-                        </li>
+                        <li class="flex items-center">Process Optimization</li>
+                        <li class="flex items-center">Supply Chain Management</li>
+                        <li class="flex items-center">Quality Management</li>
                     </ul>
                 </div>
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 border border-violet-100">
-                    <img src="https://picsum.photos/400/300?random=8" alt="Financial Advisory" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/seed/finance/64/64" alt="Financial Advisory Icon" class="w-12 h-12 mb-4"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Financial Advisory</h3>
                     <p class="text-slate-600 mb-4">Expert guidance on financial strategy, planning, and management.</p>
                     <ul class="text-slate-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Financial Planning
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Risk Management
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Investment Strategy
-                        </li>
+                        <li class="flex items-center">Financial Planning</li>
+                        <li class="flex items-center">Risk Management</li>
+                        <li class="flex items-center">Investment Strategy</li>
                     </ul>
                 </div>
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 border border-violet-100">
-                    <img src="https://picsum.photos/400/300?random=9" alt="Market Research" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/seed/market/64/64" alt="Market Research Icon" class="w-12 h-12 mb-4"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Market Research</h3>
                     <p class="text-slate-600 mb-4">Data-driven insights to understand markets, competitors, and opportunities.</p>
                     <ul class="text-slate-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Market Analysis
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Competitor Analysis
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Consumer Insights
-                        </li>
+                        <li class="flex items-center">Market Analysis</li>
+                        <li class="flex items-center">Competitor Analysis</li>
+                        <li class="flex items-center">Consumer Insights</li>
                     </ul>
                 </div>
                 <div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-violet-500/25 transition-all duration-300 hover:scale-105 border border-violet-100">
-                    <img src="https://picsum.photos/400/300?random=10" alt="Change Management" class="w-full h-48 object-cover rounded-lg mb-6">
+                    <img src="https://picsum.photos/seed/change/64/64" alt="Change Management Icon" class="w-12 h-12 mb-4"/>
                     <h3 class="text-xl font-semibold mb-4 text-violet-700">Change Management</h3>
                     <p class="text-slate-600 mb-4">Successfully navigate organizational change with expert guidance.</p>
                     <ul class="text-slate-600 space-y-2">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Change Strategy
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Employee Engagement
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-violet-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                            </svg>
-                            Training & Development
-                        </li>
+                        <li class="flex items-center">Change Strategy</li>
+                        <li class="flex items-center">Employee Engagement</li>
+                        <li class="flex items-center">Training & Development</li>
                     </ul>
+                </div>
+            </div>
+            <!-- Case Studies -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-violet-700 mb-8 text-center">Case Studies</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white/70 p-6 rounded-xl shadow-md">
+                        <h4 class="font-semibold text-violet-700 mb-2">Global Retailer Transformation</h4>
+                        <p class="text-slate-600 mb-2">We helped a global retailer increase revenue by 30% through digital transformation and process optimization.</p>
+                        <a href="#" class="text-indigo-600 hover:underline">Read More</a>
+                    </div>
+                    <div class="bg-white/70 p-6 rounded-xl shadow-md">
+                        <h4 class="font-semibold text-violet-700 mb-2">Financial Risk Management</h4>
+                        <p class="text-slate-600 mb-2">Our team enabled a financial firm to reduce risk exposure by 40% with advanced analytics and advisory.</p>
+                        <a href="#" class="text-indigo-600 hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 md:py-24 bg-gradient-to-br from-indigo-50 via-slate-50 to-violet-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent mb-6">Meet Our Team</h2>
+                <p class="text-lg text-slate-600">Our consultants are industry leaders with a passion for driving business success.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/70 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <img src="https://picsum.photos/seed/team1/96/96" alt="Jane Smith, CEO" class="w-24 h-24 rounded-full mb-4 object-cover"/>
+                    <h3 class="font-semibold text-violet-700">Jane Smith</h3>
+                    <p class="text-slate-600 mb-2">Chief Executive Officer</p>
+                    <p class="text-slate-500 text-sm">15+ years in business strategy and transformation.</p>
+                </div>
+                <div class="bg-white/70 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <img src="https://picsum.photos/seed/team2/96/96" alt="John Doe, CTO" class="w-24 h-24 rounded-full mb-4 object-cover"/>
+                    <h3 class="font-semibold text-violet-700">John Doe</h3>
+                    <p class="text-slate-600 mb-2">Chief Technology Officer</p>
+                    <p class="text-slate-500 text-sm">Expert in digital transformation and automation.</p>
+                </div>
+                <div class="bg-white/70 p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <img src="https://picsum.photos/seed/team3/96/96" alt="Emily Lee, CFO" class="w-24 h-24 rounded-full mb-4 object-cover"/>
+                    <h3 class="font-semibold text-violet-700">Emily Lee</h3>
+                    <p class="text-slate-600 mb-2">Chief Financial Officer</p>
+                    <p class="text-slate-500 text-sm">Specialist in financial planning and risk management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gradient-to-b from-violet-50 via-slate-50 to-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent mb-6">What Our Clients Say</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/80 p-8 rounded-xl shadow-lg flex flex-col items-center">
+                    <img src="https://picsum.photos/seed/clientavatar1/96/96" alt="Client testimonial 1" class="w-16 h-16 rounded-full mb-4 object-cover"/>
+                    <blockquote class="text-slate-700 italic mb-4">"ConsultCo transformed our business. Their expertise and dedication are unmatched."</blockquote>
+                    <p class="font-semibold text-violet-700">Sarah Williams</p>
+                    <p class="text-slate-500 text-sm">COO, Tech Innovators</p>
+                </div>
+                <div class="bg-white/80 p-8 rounded-xl shadow-lg flex flex-col items-center">
+                    <img src="https://picsum.photos/seed/clientavatar2/96/96" alt="Client testimonial 2" class="w-16 h-16 rounded-full mb-4 object-cover"/>
+                    <blockquote class="text-slate-700 italic mb-4">"Their team delivered results beyond our expectations. Highly recommended!"</blockquote>
+                    <p class="font-semibold text-violet-700">Michael Chen</p>
+                    <p class="text-slate-500 text-sm">CEO, FinEdge</p>
                 </div>
             </div>
         </div>
@@ -295,11 +302,10 @@
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-700 to-indigo-700 bg-clip-text text-transparent mb-6">Get in Touch</h2>
                     <p class="text-lg text-slate-600 mb-8">Ready to transform your business? Contact us today for a free consultation and discover how we can help you achieve your goals.</p>
-                    
                     <div class="grid gap-6 mb-8">
                         <div class="flex items-start space-x-4">
                             <div class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100">
-                                <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                 </svg>
                             </div>
@@ -309,10 +315,9 @@
                                 <p class="text-slate-600">Mon - Fri, 9am - 6pm</p>
                             </div>
                         </div>
-                        
                         <div class="flex items-start space-x-4">
                             <div class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100">
-                                <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                                 </svg>
                             </div>
@@ -322,10 +327,9 @@
                                 <p class="text-slate-600">support@consultco.com</p>
                             </div>
                         </div>
-                        
                         <div class="flex items-start space-x-4">
                             <div class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100">
-                                <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                 </svg>
@@ -337,85 +341,108 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="flex space-x-4">
-                        <a href="#" class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100 text-violet-600 hover:scale-110 transition-transform">
+                    <div class="flex space-x-4" aria-label="Social Media Links">
+                        <a href="#" class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100 text-violet-600 hover:scale-110 transition-transform" aria-label="LinkedIn">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </a>
-                        <a href="#" class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100 text-violet-600 hover:scale-110 transition-transform">
+                        <a href="#" class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100 text-violet-600 hover:scale-110 transition-transform" aria-label="Twitter">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                             </svg>
                         </a>
-                        <a href="#" class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100 text-violet-600 hover:scale-110 transition-transform">
+                        <a href="#" class="bg-white/50 backdrop-blur-sm p-3 rounded-lg border border-violet-100 text-violet-600 hover:scale-110 transition-transform" aria-label="Facebook">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
                     </div>
                 </div>
-
                 <div class="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-violet-100">
                     <h3 class="text-2xl font-semibold text-violet-700 mb-6">Send us a Message</h3>
-                    <form id="contact-form">
+                    <form id="contact-form" aria-label="Contact Form">
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-slate-700 mb-2" for="name">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required aria-required="true" aria-label="Name">
                             </div>
                             <div>
                                 <label class="block text-slate-700 mb-2" for="email">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required aria-required="true" aria-label="Email">
                             </div>
                         </div>
                         <div class="mb-6">
                             <label class="block text-slate-700 mb-2" for="subject">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required aria-required="true" aria-label="Subject">
                         </div>
                         <div class="mb-6">
                             <label class="block text-slate-700 mb-2" for="message">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required></textarea>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" required aria-required="true" aria-label="Message"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-6 py-3 rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-violet-500/25">Send Message</button>
+                        <div id="form-message" class="mt-4 text-center text-sm"></div>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- Newsletter Signup -->
+            <div class="max-w-xl mx-auto mt-16 bg-white/70 p-8 rounded-xl shadow-md text-center">
+                <h3 class="text-xl font-semibold text-violet-700 mb-4">Subscribe to Our Newsletter</h3>
+                <form id="newsletter-form" class="flex flex-col md:flex-row gap-4 justify-center">
+                    <input type="email" id="newsletter-email" class="flex-1 px-4 py-2 border border-violet-200 rounded-lg focus:outline-none focus:border-violet-500 bg-white/50 backdrop-blur-sm" placeholder="Your email address" required aria-label="Newsletter Email">
+                    <button type="submit" class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-6 py-2 rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-violet-500/25">Subscribe</button>
                 </form>
+                <div id="newsletter-message" class="mt-2 text-sm"></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-b from-slate-900 to-violet-950 text-white py-8">
+    <footer class="bg-gradient-to-b from-slate-900 to-blue-950 text-slate-100 py-8">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4 bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">ConsultCo</h3>
-                    <p class="text-slate-400">Your trusted partner in business transformation and growth.</p>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-200">ConsultCo</h3>
+                    <p class="text-slate-200">Your trusted partner in business transformation and growth.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4 bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">Contact Info</h3>
-                    <p class="text-slate-400">Email: info@consultco.com</p>
-                    <p class="text-slate-400">Phone: (555) 123-4567</p>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-200">Quick Links</h3>
+                    <ul class="text-slate-200 space-y-2">
+                        <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition">Services</a></li>
+                        <li><a href="#team" class="hover:text-blue-300 transition">Team</a></li>
+                        <li><a href="#testimonials" class="hover:text-blue-300 transition">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4 bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">Follow Us</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-200">Contact Info</h3>
+                    <p class="text-slate-200">Email: info@consultco.com</p>
+                    <p class="text-slate-200">Phone: (555) 123-4567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-200">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-slate-400 hover:text-violet-400 transition-all hover:scale-105">LinkedIn</a>
-                        <a href="#" class="text-slate-400 hover:text-violet-400 transition-all hover:scale-105">Twitter</a>
-                        <a href="#" class="text-slate-400 hover:text-violet-400 transition-all hover:scale-105">Facebook</a>
+                        <a href="#" class="text-slate-200 hover:text-blue-300 transition-all hover:scale-105" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="text-slate-200 hover:text-blue-300 transition-all hover:scale-105" aria-label="Twitter">Twitter</a>
+                        <a href="#" class="text-slate-200 hover:text-blue-300 transition-all hover:scale-105" aria-label="Facebook">Facebook</a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-violet-900 mt-8 pt-8 text-center text-slate-400">
+            <div class="border-t border-blue-900 mt-8 pt-8 text-center text-slate-200">
                 <p>&copy; 2025 ConsultCo. All rights reserved.</p>
+                <div class="mt-2 text-xs">
+                    <a href="#" class="hover:text-blue-300 transition">Privacy Policy</a> | <a href="#" class="hover:text-blue-300 transition">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-all z-50 hidden" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+        </svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
